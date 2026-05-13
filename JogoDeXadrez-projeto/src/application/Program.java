@@ -1,8 +1,12 @@
 package application;
 
 import boardLayer.Board;
+import chessLayer.ChessMatch;
 
 public class Program {
+    void main() {
 
-    Board board = new Board(8, 8);
+        ChessMatch match = new ChessMatch();
+        UI.printBoard(match.getPieces());
+    }
 }

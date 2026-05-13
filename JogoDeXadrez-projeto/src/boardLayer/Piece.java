@@ -14,15 +14,15 @@ public class Piece {
     }
 
     public Piece[][] possibleMoves() {
-
+        return null;
     }
 
     public boolean possibleMove(Position position) {
-
+        return false;
     }
 
     public boolean isThereAnyPossibleMove() {
-
+        return false;
     }
 
     public Position getPosition() {

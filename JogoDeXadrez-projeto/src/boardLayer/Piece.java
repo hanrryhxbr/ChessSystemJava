@@ -13,15 +13,15 @@ public class Piece {
         return board;
     }
 
-    public Piece[][] possibleMoves() {
+    protected Piece[][] possibleMoves() {
         return null;
     }
 
-    public boolean possibleMove(Position position) {
+    protected boolean possibleMove(Position position) {
         return false;
     }
 
-    public boolean isThereAnyPossibleMove() {
+    protected boolean isThereAnyPossibleMove() {
         return false;
     }
 

@@ -1,13 +1,12 @@
 package chessLayer;
 
 import boardLayer.Board;
-import boardLayer.Position;
 import chessLayer.pieces.King;
 import chessLayer.pieces.Rook;
 
 public class ChessMatch {
 
-    private Board board;
+    private final Board board;
 
     public ChessMatch() {
         board = new Board(8, 8);
@@ -24,8 +23,12 @@ public class ChessMatch {
         return match;
     }
 
+    public void placeNewPiece(char column, int row, ChessPiece piece) {
+        board.placePiece(piece, new ChessPosition(column, row).toPosition());
+    }
+
     private void initialSetup() {
-        board.placePiece(new Rook(board, Color.WHITE), new Position(2, 1));
-        board.placePiece(new King(board, Color.BLACK), new Position(0, 4));
+        placeNewPiece('b', 6, new King(board, Color.WHITE));
+        placeNewPiece('c', 6, new Rook(board, Color.WHITE));
     }
 }

@@ -22,12 +22,12 @@ public abstract class Piece {
     public boolean isThereAnyPossibleMove() {
         boolean[][] aux = possibleMoves();
         for (int i = 0; i < aux.length; i++) {
-            for (int j = 0; j < aux[i].length; j++) {
+            for (int j = 0; j <aux.length; j++) {
                 if (aux[i][j]) {
                     return true;
                 }
-                }
             }
+        }
         return false;
     }
 

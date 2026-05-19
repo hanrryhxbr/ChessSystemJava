@@ -56,6 +56,9 @@ public class UI {
         System.out.println();
         IO.println("Turn: " + match.getTurn());
         IO.println("Waiting player: " + match.getCurrentPlayer());
+        if (match.isCheck()) {
+            IO.println("CHECK!");
+        }
     }
 
     public static void printBoard(ChessPiece[][] pieces) {

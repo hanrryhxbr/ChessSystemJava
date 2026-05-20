@@ -3,6 +3,7 @@ package chessLayer;
 import boardLayer.Board;
 import boardLayer.Piece;
 import boardLayer.Position;
+import chessLayer.pieces.Bishop;
 import chessLayer.pieces.King;
 import chessLayer.pieces.Pawn;
 import chessLayer.pieces.Rook;
@@ -148,10 +149,10 @@ public class ChessMatch {
         placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('a', 1, new Rook(board, Color.WHITE));
         placeNewPiece('b', 1, new Pawn(board, Color.WHITE));
-        placeNewPiece('c', 1, new Pawn(board, Color.WHITE));
+        placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('d', 1, new Pawn(board, Color.WHITE));
         placeNewPiece('e', 1, new King(board, Color.WHITE));
-        placeNewPiece('f', 1, new Pawn(board, Color.WHITE));
+        placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('g', 1, new Pawn(board, Color.WHITE));
         placeNewPiece('h', 1, new Rook(board, Color.WHITE));
 
@@ -165,10 +166,10 @@ public class ChessMatch {
         placeNewPiece('h', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('b', 8, new Pawn(board, Color.BLACK));
-        placeNewPiece('c', 8, new Pawn(board, Color.BLACK));
+        placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
         placeNewPiece('d', 8, new Pawn(board, Color.BLACK));
         placeNewPiece('e', 8, new King(board, Color.BLACK));
-        placeNewPiece('f', 8, new Pawn(board, Color.BLACK));
+        placeNewPiece('f', 8, new Bishop(board, Color.BLACK));
         placeNewPiece('g', 8, new Pawn(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
 
